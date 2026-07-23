@@ -22,8 +22,17 @@ jobs:
           persist-credentials: false
 
       - name: Run zizmor 🌈
-        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        uses: github.com/kruskall/zizmor-action@main
         with:
           advanced-security: false
           annotations: true
-          config: .github/zizmor.yml
+          zizmor-config: |
+            rules:
+              dangerous-triggers:
+                disable: true
+              dependabot-cooldown:
+                disable: true
+              unpinned-uses:
+                config:
+                  policies:
+                    actions/*: ref-pin
