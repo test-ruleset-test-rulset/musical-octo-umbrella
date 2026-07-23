@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
 
       - name: Run zizmor 🌈
-        uses: kruskall/zizmor-action@main
+        uses: kruskall/zizmor-action@f8622d6c635fe5bad94d74589544e3e402d3bef8
         with:
           advanced-security: false
           annotations: true
