@@ -27,7 +27,7 @@ jobs:
         with:
           advanced-security: false
           annotations: true
-          zizmor_config: |
+          zizmor-config: |
             rules:
               dangerous-triggers:
                 disable: true
