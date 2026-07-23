@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
 
       - name: Run zizmor 🌈
-        uses: github.com/kruskall/zizmor-action@main
+        uses: kruskall/zizmor-action@main
         with:
           advanced-security: false
           annotations: true
